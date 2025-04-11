@@ -1,0 +1,143 @@
+/* Resetando margens e preenchimentos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 20px;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(red, blue);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Main */
+main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Estilo de cada bloco de tema */
+.tema {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 45%;
+    margin: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tema h2 {
+    color: #4CAF50;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.tema p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.tema a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tema:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.tema a:hover {
+    background-color: #45a049;
+}
+
+/* Rodapé *//* Subtemas dentro de cada seção */
+h3 {
+    color: #4CAF50;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Lista de links para subtemas */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+ul li a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+    color: #45a049;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+.caixa {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition: width 1s ease 0s, background-color 1s ease 1s;
+}
+
+.caixa:hover {
+    width: 200px;
+    background-color: red;
+}
